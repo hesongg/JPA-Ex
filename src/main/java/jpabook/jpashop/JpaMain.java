@@ -20,7 +20,8 @@ public class JpaMain {
 
         try {
             //단방향 버전
-            /*Order order1 = new Order();
+            /*
+            Order order1 = new Order();
             em.persist(order1);
 
             OrderItem orderItem = new OrderItem();
@@ -31,8 +32,12 @@ public class JpaMain {
             //양방향
             Order order2 = new Order();
             OrderItem orderItem2 = new OrderItem();
+            em.persist(orderItem2);
+
             order2.addOrderItem(orderItem2);
             em.persist(order2);
+
+
             //
 
             tx.commit();
